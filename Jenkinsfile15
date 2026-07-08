@@ -1,0 +1,15 @@
+pipeline {
+
+    agent any
+
+    stages {
+
+        stage('Workspace') {
+            steps {
+                echo "Workspace is ${env.WORKSPACE}"
+            }
+        }
+
+    }
+
+}

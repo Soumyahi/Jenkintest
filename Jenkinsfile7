@@ -1,0 +1,17 @@
+pipeline {
+    agent any
+
+    environment {
+        NAME='Soumya'
+    }
+
+    stages {
+
+        stage('Environment') {
+            steps {
+                echo "Name is ${NAME}"
+            }
+        }
+
+    }
+}

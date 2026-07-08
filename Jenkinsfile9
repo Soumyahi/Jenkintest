@@ -1,0 +1,15 @@
+pipeline {
+
+    agent any
+
+    stages {
+
+        stage('Current User') {
+            steps {
+                sh 'whoami'
+            }
+        }
+
+    }
+
+}
